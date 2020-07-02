@@ -1,0 +1,17 @@
+#请注意保存为UTF-8编码
+spring:
+  profiles:
+    active:
+    - dev
+
+---
+spring:
+  profiles: dev		#开发环境
+  application:
+    name: exam-config-lesheng-dev
+
+---
+spring:
+  profiles: test	#测试环境
+  application:
+    name: exam-config-lesheng-test
