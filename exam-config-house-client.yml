@@ -12,7 +12,7 @@ spring:
     name: exam-config-house-client
   datasource:
     druid:
-      url: jdbc:mysql://192.168.54.20:3306/houses?useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://192.168.54.20:3306/db1?useUnicode=true&characterEncoding=utf-8
       username: root
       password: 123456
       initial-size: 1
@@ -29,7 +29,7 @@ mybatis:
 eureka:
   client:  #将客户端注册到服务端
     service-url:
-      defaultZone: http://exam-eureka-1:7001/eureka,http://exam-eureka-2:7002/eureka,http://exam-eureka-3:7003/eureka
+      defaultZone: http://exam-eureka-1:7001/eureka
   instance:
     instance-id: exam-house-8001
     prefer-ip-address: true     #访问路径可以显示IP地址
@@ -51,7 +51,7 @@ spring:
     name: exam-config-house-client
   datasource:
     druid:
-      url: jdbc:mysql://192.168.54.20:3306/houses?useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://192.168.54.20:3306/db2?useUnicode=true&characterEncoding=utf-8
       username: root
       password: 123456
       initial-size: 1
@@ -68,7 +68,7 @@ mybatis:
 eureka:
   client:  #将客户端注册到服务端
     service-url:
-      defaultZone: http://exam-eureka-1:7001/eureka,http://exam-eureka-2:7002/eureka,http://exam-eureka-3:7003/eureka
+      defaultZone: http://exam-eureka-1:7001/eureka
   instance:
     instance-id: exam-house-8001
     prefer-ip-address: true     #访问路径可以显示IP地址
